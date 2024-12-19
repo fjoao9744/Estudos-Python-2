@@ -1,3 +1,5 @@
+# property e setter
+
 class Pessoa:
     especie = "Humano"
     

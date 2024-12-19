@@ -1,3 +1,5 @@
+# __dict__
+
 class Pessoa:
     especie = "Humano"
     

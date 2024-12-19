@@ -1,3 +1,5 @@
+# atributos protegidos e privados
+
 class Pessoa:
     especie = "Humano" # atributo da classe
     

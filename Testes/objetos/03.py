@@ -1,3 +1,5 @@
+# __slots__
+
 class Pessoa:
     def __init__(self, nome, idade) -> None:
         self.__nome = nome
