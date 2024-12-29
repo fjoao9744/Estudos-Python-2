@@ -3,6 +3,7 @@ import discord
 from dotenv import load_dotenv
 import os
 import pandas as pd
+from db import Conection
 
 # permissões(intents) que o bot vai ter
 intents = discord.Intents.default()
@@ -18,18 +19,13 @@ async def on_ready():
     
 @bot.command()
 async def pontos(ctx):
-    df = pd.DataFrame({
-        "Smogon": [0],
-        "JF": [0],
-        "Giovana": [0],
-        "Kédao kook": [0]
-        })
+    cn = Conection()
 
     # Converte o DataFrame para string
-    df = df.to_string(index=False)
+    df = cn.exibir()
     
     await ctx.send(f"```\n{df}\n```")
-    
+
 load_dotenv() 
 token = os.getenv("DISCORD_BOT_TOKEN_TEST") 
 
