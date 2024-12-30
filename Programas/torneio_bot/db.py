@@ -42,5 +42,6 @@ class Conection:
         return df
     
 
-        
+c = Conection()
+c.exibir()
         

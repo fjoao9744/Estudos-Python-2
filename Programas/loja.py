@@ -32,7 +32,7 @@ class Loja:
             try:
                 novo_item = int(input(pergunta))
                 novo_item = lista[novo_item]
-                return novo_item.capitalize()
+                return novo_item
             
             except:
                 if exception:
@@ -132,3 +132,7 @@ class Produto:
                 self.estoque = novo_valor
             case 4:
                 self._detalhes = novo_valor
+
+loja = Loja("Atletic")
+loja.adicionar_produto("camisa adidas", 4000)
+loja.mostrar_detalhes()

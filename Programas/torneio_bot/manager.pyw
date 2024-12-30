@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
 from db import Conection
 
 class Tela(tk.Tk):
