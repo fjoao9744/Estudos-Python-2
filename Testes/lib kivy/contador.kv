@@ -1,0 +1,18 @@
+#:kivy 2.3.0
+#:import dp kivy.metrics.dp
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: dp(20)
+    spacing: dp(10)
+
+    Label:
+        id: lbl
+        text: f"Cliques: {app.contador}"
+        font_size: '24sp'
+
+    Button:
+        text: "Adicionar +1"
+        size_hint: 1, None
+        height: dp(48)
+        on_release: app.click()
